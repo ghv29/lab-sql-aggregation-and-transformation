@@ -12,6 +12,7 @@ FROM film;
 SELECT 
 DATEDIFF(MAX(last_update),MIN(rental_date)) AS operating_days
 FROM rental;
+
 #2.2
 SELECT *, 
 DATE_FORMAT(rental_date, '%M') AS rental_month,
